@@ -4,3 +4,6 @@
 [submodule "Arts_Python_Tools"]
 	path = Arts_Python_Tools
 	url = git@github.com:amcgarity/Arts_Python_Tools.git
+[submodule "ampl.linux64"]
+	path = ampl.linux64
+	url = git@github.com:amcgarity/ampl.linux64.git
