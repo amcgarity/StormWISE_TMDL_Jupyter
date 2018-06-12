@@ -18,8 +18,8 @@ from StormWISE_TMDL_Engine.stormwise_tmdl_benefits_and_bounds import format_and_
 from Arts_Python_Tools.tools import multiply_dict_by_constant
 from Arts_Python_Tools.tools import format_dict_as_strings
 
-amplPath = "/Applications/amplide.macosx64/ampl"  # note: you must also set the solver path in stormwise_tmdl.run
-       
+amplPath = "ampl.linux64/ampl"  # note: you must also set the solver path in stormwise_tmdl.run
+
 def print_output(solutionDict,benefitUnits,benefitConvertUnits):                              
     benTotsByBenefit = solutionDict['benTotsByBenefit']
     displayDict = format_and_convert_benefit_dict(benTotsByBenefit,"%0.2f",benefitConvertUnits,benefitUnits)
@@ -203,7 +203,7 @@ def main():
                 break
         except IOError:
             print "\n SORRY:  the file %s can not be found - TRY AGAIN" % inYamlFile
-            
+
     s = benefit_slopes(inYamlDoc)
     T = inYamlDoc['T']
     upperBounds = upper_bounds(inYamlDoc)
