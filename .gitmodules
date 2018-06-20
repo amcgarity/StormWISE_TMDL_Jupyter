@@ -7,3 +7,6 @@
 [submodule "ampl.linux64"]
 	path = ampl.linux64
 	url = git@github.com:amcgarity/ampl.linux64.git
+[submodule "ampl.mswin64"]
+	path = ampl.mswin64
+	url = git@github.com:amcgarity/ampl.mswin64.git
